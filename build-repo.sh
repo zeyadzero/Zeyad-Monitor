@@ -58,5 +58,6 @@ cp site/index.html "$OUT/index.html"
 cp site/setup.sh "$OUT/setup.sh"
 cp site/install.sh "$OUT/install.sh"
 cp site/uninstall.sh "$OUT/uninstall.sh"
+cp -a assets "$OUT/assets"
 cp README.md "$OUT/README.md" 2>/dev/null || true
 echo "Repository ready in ./$OUT  ($(ls "$OUT/pool/$COMP" | wc -l) package file(s))"

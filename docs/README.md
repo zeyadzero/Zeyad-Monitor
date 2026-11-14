@@ -1,5 +1,15 @@
 # Zeyad Monitor
 
+<p align="center">
+  <img src="assets/screenshots/dashboard.png" width="48%" alt="Zeyad Monitor Dashboard">
+  <img src="assets/screenshots/dashboard-2.png" width="48%" alt="Dashboard Details">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/library.png" width="48%" alt="Library">
+  <img src="assets/screenshots/package.png" width="48%" alt="Package Management">
+</p>
+
 Official public APT repository for Zeyad Monitor.
 
 ## Supported Systems
