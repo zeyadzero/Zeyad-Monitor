@@ -1,0 +1,22 @@
+Package: zeyad-monitor
+Architecture: all
+Version: 6.0
+Priority: optional
+Section: utils
+Maintainer: Zeyad Hossam <zeyad@localhost>
+Depends: python3, python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, pkexec | policykit-1
+Recommends: gir1.2-xapp-1.0, pciutils
+Conflicts: ram-monitor
+Replaces: ram-monitor
+Filename: pool/main/zeyad-monitor_6.0_all.deb
+Size: 23510
+MD5sum: fb65435ae2d57eb3b978aed8c30c5ddf
+SHA1: 273ab44a63601fc7fba6dd0a198aa4dc507d7b19
+SHA256: 85b30e2a3db3a7e989fcacd331359f69faf0cc300e2d078c2377ac7ffd5f6925
+SHA512: ceac347824e067c4efecce94f40728b7a7b88b83b23651af6828f4200500446dd8c807442ddcf8fe0382014629d3975ea85a3b27682395d56607eaa610a963f8
+Description: Zeyad Monitor - RAM / CPU / GPU monitor, Waydroid aware
+ Per-application memory (PSS), CPU and GPU usage with app logos, live
+ numbers in the panel, Waydroid/Android apps with real names and logos,
+ an Explain window (what a process is, its package, what it needs and
+ what needs it) and a whole-system package view. Developed by Zeyad Hossam.
+
