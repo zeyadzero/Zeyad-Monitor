@@ -10,8 +10,8 @@ what it needs and what needs it.
 
 ```bash
 sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://USERNAME.github.io/REPO/key.gpg | sudo tee /etc/apt/keyrings/zeyad-monitor.gpg >/dev/null
-echo "deb [signed-by=/etc/apt/keyrings/zeyad-monitor.gpg] https://USERNAME.github.io/REPO stable main" \
+curl -fsSL https://zeyadzero.github.io/Zeyad-Monitor/key.gpg | sudo tee /etc/apt/keyrings/zeyad-monitor.gpg >/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/zeyad-monitor.gpg] https://zeyadzero.github.io/Zeyad-Monitor stable main" \
   | sudo tee /etc/apt/sources.list.d/zeyad-monitor.list
 sudo apt update
 sudo apt install zeyad-monitor
