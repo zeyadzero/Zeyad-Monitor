@@ -113,23 +113,20 @@ footer {
 
 <section class="section" id="install">
   <h2>Installation</h2>
-  <p class="subtitle">Install Zeyad Monitor using APT.</p>
+  <p class="subtitle">Configure once, then install and manage through APT.</p>
   <div class="panel">
-    <h3>1. Add the repository signing key</h3>
-    <pre>sudo install -d -m 0755 /etc/apt/keyrings
+    <h3>1. Configure the repository (first time only)</h3>
+    <pre>curl -fsSL https://zeyadzero.github.io/Zeyad-Monitor/setup.sh | sudo bash</pre>
 
-curl -fsSL https://zeyadzero.github.io/Zeyad-Monitor/key.gpg \
-| sudo tee /etc/apt/keyrings/zeyad-monitor.gpg >/dev/null
+    <h3>2. Install Zeyad Monitor</h3>
+    <pre>sudo apt install zeyad-monitor</pre>
 
-sudo chmod 644 /etc/apt/keyrings/zeyad-monitor.gpg</pre>
-
-    <h3>2. Add the APT repository</h3>
-    <pre>echo "deb [signed-by=/etc/apt/keyrings/zeyad-monitor.gpg] https://zeyadzero.github.io/Zeyad-Monitor stable main" \
-| sudo tee /etc/apt/sources.list.d/zeyad-monitor.list</pre>
-
-    <h3>3. Update and install</h3>
+    <h3>3. Update Zeyad Monitor</h3>
     <pre>sudo apt update
-sudo apt install zeyad-monitor</pre>
+sudo apt upgrade</pre>
+
+    <p class="subtitle">Repository setup is required only once per machine.
+    Future installations and updates use standard APT commands.</p>
   </div>
 </section>
 
